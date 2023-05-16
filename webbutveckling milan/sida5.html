@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bli medlem i Milan</title>
+    <link rel="stylesheet" href="sida5.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gör ditt medlemskap nu!</h1>
+      <form id="membership-form" for="rossoneri.html">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="age">Ålder:</label>
+        <input type="number" id="age" name="age" required min="13" />
+        <label for="favorite-player">Favoritspelare:</label>
+        <select id="favorite-player" name="favorite-player">
+          <option value="Zlatan Ibrahimovic">Zlatan Ibrahimovic</option>
+          <option value="Olivier Giroud">Olivier Giroud</option>
+          <option value="Rafael Leao">Rafael Leao</option>
+          <option value="Tonali">Tonali</option>
+          <option value="Junior Messias">Junior Messias</option>
+        </select>
+        <button type="submit" id="submit-button">Bli medlem</button>
+      </form>
+      <div id="success-message" class="hidden">
+        <h2>Tack för ditt medlemskap, Forza Milan!</h2>
+      </div>
+    </div>
+
+    <script src="sida5.js"></script>
+  </body>
+</html>
