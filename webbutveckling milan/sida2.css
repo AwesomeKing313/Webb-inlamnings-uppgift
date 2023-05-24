@@ -29,8 +29,9 @@ nav ul li a:hover {
 }
 
 body .container {
-  background-color: lightgreen;
-  height: 2000px; /* Anpassa höjden till ditt innehåll */
+  background-image: url("vit.jpg");
+  background-repeat: inherit;
+  height: auto; /* Anpassa höjden till ditt innehåll */
   overflow: hidden;
 }
 
@@ -54,7 +55,7 @@ body .container {
 .animated-section img {
   max-height: 400px;
   max-width: 600px;
-  border: solid white 4px;
+  border: solid rgb(201, 21, 21) 4px;
   margin-top: 10px;
 }
 

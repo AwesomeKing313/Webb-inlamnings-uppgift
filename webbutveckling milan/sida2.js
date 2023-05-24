@@ -18,17 +18,18 @@ function animateVisibleSections() {
   window.addEventListener("load", animateVisibleSections);
 
 
-  // Funktion för att visa eller dölja textrutan
-function toggleTextModal() {
+  // Funktion för att visa eller dölja textrutan med korrekt länk
+function toggleTextModal(event) {
   var textModal = document.querySelector(".text-modal");
+  var link = event.target.dataset.link;
 
   if (!textModal) {
     // Skapa en ny textruta
     textModal = document.createElement("a");
     textModal.className = "text-modal";
-    textModal.href = "https://www.aftonbladet.se";
+    textModal.href = link;
     textModal.target = "_blank";
-    textModal.innerHTML = "Aftonbladet";
+    textModal.innerHTML = "Fortsätt till artikeln";
 
     // Lägg till textrutan i sidokroppen
     document.body.appendChild(textModal);
