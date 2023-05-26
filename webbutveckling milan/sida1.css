@@ -135,3 +135,34 @@ nav ul li a:hover {
   border-radius: 10px;
   animation: animate 3s linear infinite;
 }
+
+/* Övrig CSS-kod */
+
+@media (max-width: 428px) {
+  .main,
+  .main2 {
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .image-container,
+  .image-container2 {
+    float: none;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text-container,
+  .text-container2 {
+    float: none;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .text-container p,
+  .text-container2 p {
+    font-size: 14px;
+  }
+}
